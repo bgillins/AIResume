@@ -16,6 +16,8 @@ class UserProfileForm(forms.ModelForm):
         'placeholder': 'Career Interest',
     }), required=False)
 
+    job_description = forms.CharField()
+
     class Meta:
         model = UserProfile
-        fields = ['first_name', 'last_name', 'career_interest']
+        fields = ['first_name', 'last_name', 'career_interest', 'job_description']
